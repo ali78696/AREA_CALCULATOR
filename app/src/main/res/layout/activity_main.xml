@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:backgroundTint="#5C7B93"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_gravity="center"
+        android:backgroundTint="@color/teal_200"
+        android:gravity="center"
+        android:text="@string/area_calculator"
+        android:textColor="#BBDEFB"
+        android:textSize="55sp"
+        android:textStyle="bold|italic" />
+
+
+    <Button
+        android:id="@+id/square"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:backgroundTint="@color/white"
+        android:gravity="center"
+        android:text="@string/square"
+        android:textColor="#448AFF"
+        android:textSize="55sp"
+        android:textStyle="bold|italic" />
+
+    <Button
+        android:id="@+id/triangle"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:backgroundTint="@color/white"
+        android:gravity="center"
+        android:text="@string/triangle"
+        android:textColor="#448AFF"
+        android:textSize="55sp"
+        android:textStyle="bold|italic" />
+
+    <Button
+        android:id="@+id/rectangle"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:backgroundTint="@color/white"
+        android:gravity="center"
+        android:text="@string/rectangle"
+        android:textColor="#448AFF"
+        android:textSize="55sp"
+        android:textStyle="bold|italic"
+        tools:ignore="InvalidId" />
+
+
+    <Button
+        android:id="@+id/circle"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:backgroundTint="@color/white"
+        android:gravity="center"
+        android:text="Circle"
+        android:textColor="#448AFF"
+        android:textSize="55sp"
+        android:textStyle="bold|italic"
+        tools:ignore="InvalidId" />
+
+</androidx.appcompat.widget.LinearLayoutCompat>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#577993"
+    tools:context=".circle"
+    tools:ignore="ExtraText">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="401dp"
+        android:layout_height="76dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="48dp"
+        android:background="@color/teal_200"
+        android:gravity="center"
+        android:text="@string/circle"
+        android:textColor="#004D40"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toTopOf="@+id/value"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/value"
+        android:layout_width="202dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="104dp"
+        android:layout_marginEnd="115dp"
+        android:layout_marginBottom="20dp"
+        android:background="@color/white"
+        android:gravity="center"
+        android:hint="@string/value"
+        android:inputType="number"
+        app:layout_constraintBottom_toTopOf="@+id/answer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/answer"
+        android:layout_width="158dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="134dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="134dp"
+        android:layout_marginBottom="110dp"
+        android:background="@color/white"
+        android:gravity="center"
+        android:hint="@string/answer"
+        android:inputType="number"
+        app:layout_constraintBottom_toTopOf="@+id/calculate"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.066"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/value" />
+
+    <Button
+        android:id="@+id/calculate"
+        android:layout_width="172dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="119dp"
+        android:layout_marginEnd="115dp"
+        android:layout_marginBottom="285dp"
+        android:text="Calculate"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/answer" />
+</androidx.constraintlayout.widget.ConstraintLayout>
